@@ -1,0 +1,18 @@
+.list {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    width: 90%; /* Adjust the width to fit smaller screens */
+    padding: 15px; /* Reduce padding for better space management */
+    margin-top: 30px; /* Reduce the top margin to save vertical space */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soften the shadow for smaller sizes */
+  }
+}

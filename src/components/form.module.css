@@ -1,0 +1,55 @@
+.todoform {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.modernInput {
+    width: 100%;
+    border: none;
+    display: block;
+    color: black;
+    font-size: 16px;
+}
+.modernInput:focus {
+    outline: none;
+}
+.modernButton {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    background-color: #f7ca18;
+    padding: 12px 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.inputContainer {
+    display: flex;
+}
+
+
+@media screen and (max-width: 768px) {
+  .todoform {
+    width: 90%; /* Reduce the width to make it fit smaller screens */
+    padding: 15px; /* Reduce padding for a cleaner look */
+    margin-top: 30px; /* Adjust margin to save vertical space */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly reduce shadow for subtlety */
+  }
+
+  .modernInput {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  .modernButton {
+    padding: 10px 16px; /* Reduce padding to match smaller design */
+    font-size: 14px; /* Adjust font size for the button */
+  }
+
+  .inputContainer {
+    flex-direction: column; /* Stack inputs vertically on smaller screens */
+    gap: 10px; /* Add spacing between stacked elements */
+  }
+}

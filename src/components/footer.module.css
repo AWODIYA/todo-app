@@ -1,0 +1,25 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  background-color: #f7ca18;
+  padding: 10px;
+}
+.item {
+  margin: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 1.2em; /* Reduce font size for smaller screens */
+    padding: 8px; /* Reduce padding for better space management */
+    display: flex;
+  }
+
+  .item {
+    margin: 20px; /* Reduce the margin to optimize space on smaller screens */
+  }
+}

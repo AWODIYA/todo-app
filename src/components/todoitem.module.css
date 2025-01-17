@@ -1,0 +1,57 @@
+.item {
+  width: 500px;
+  color: #353935;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.itemName {
+  font-weight: bold;
+  padding: 20px;
+}
+.line {
+  border: 1px solid #f4f4f4;
+}
+.deleteButton {
+  float: right;
+  padding: 12px 20px;
+  background-color: #f7ca18;
+  color: white;
+  border: none;
+  margin-top: -5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    width: 90%; /* Adjust width to fit smaller screens */
+    font-size: 16px; /* Reduce font size for better readability on small devices */
+    margin: 10px auto; /* Add vertical spacing between items */
+  }
+
+  .itemName {
+    padding: 15px; /* Reduce padding for smaller screen real estate */
+  }
+
+  .line {
+    border: 1px solid #eaeaea; /* Make the border slightly lighter for better contrast on smaller screens */
+  }
+
+  .deleteButton {
+    float: none; /* Remove float for better alignment on smaller devices */
+    display: block; /* Make the button block-level so it appears below the item */
+    width: 100%; /* Stretch the button to the full width of the container */
+    margin-top: 10px; /* Add spacing above the button */
+    text-align: center; /* Center-align the text */
+    padding: 10px; /* Adjust padding for smaller sizes */
+  }
+
+  .completed {
+    font-size: 16px; /* Match reduced font size of the parent `.item` */
+    text-decoration: line-through;
+  }
+}
